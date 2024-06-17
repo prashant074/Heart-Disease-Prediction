@@ -11,7 +11,6 @@ Model Training and Evaluation
 Results
 Usage
 Conclusion
-
 Introduction
 The goal of this project is to predict the presence of heart disease using a dataset that includes various medical attributes. The project utilizes different machine learning algorithms, evaluates their performance, and selects the best model for prediction.
 
@@ -25,6 +24,8 @@ seaborn
 scikit-learn
 scipy
 Install the necessary packages using:
+Copy code
+
 pip install numpy pandas matplotlib seaborn scikit-learn scipy
 
 Data Preprocessing
@@ -61,8 +62,11 @@ Train the model using the provided code.
 Input new data in the specified format.
 Run the prediction function to get results.
 Example:
-Input_data = (63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0)
+Copy code
+
+input_data = (63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0)
 prediction = pipeline.predict(np.asarray(input_data).reshape(1, -1))
+
 
 Conclusion
 This project demonstrates a comprehensive approach to building a machine learning model for heart disease prediction, covering data preprocessing, visualization, feature engineering, model training, and evaluation. The best model can be used for future predictions, providing valuable insights into heart disease diagnosis.
